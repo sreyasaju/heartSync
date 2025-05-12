@@ -48,6 +48,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.frame = QFrame(self.horizontalLayoutWidget)
         self.frame.setObjectName(u"frame")
+        self.frame.setStyleSheet(u"background-color: rgb(237, 237, 243)")
         self.frame.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame.setFrameShadow(QFrame.Shadow.Sunken)
 
@@ -55,7 +56,7 @@ class Ui_MainWindow(object):
 
         self.scrollArea_2 = QScrollArea(self.scrollAreaWidgetContents)
         self.scrollArea_2.setObjectName(u"scrollArea_2")
-        self.scrollArea_2.setGeometry(QRect(170, 0, 631, 551))
+        self.scrollArea_2.setGeometry(QRect(160, 0, 631, 551))
         self.scrollArea_2.setFrameShape(QFrame.Shape.NoFrame)
         self.scrollArea_2.setLineWidth(0)
         self.scrollArea_2.setWidgetResizable(True)
@@ -64,8 +65,28 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 631, 551))
         self.widget = QWidget(self.scrollAreaWidgetContents_2)
         self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(20, 20, 581, 91))
-        self.widget.setStyleSheet(u"background-color: rgb(244, 244, 244);")
+        self.widget.setGeometry(QRect(20, 40, 581, 91))
+        self.widget.setStyleSheet(u"background-color: rgb(244, 244, 244);\n"
+"border-radius: 15px;\n"
+"")
+        self.widget_2 = QWidget(self.scrollAreaWidgetContents_2)
+        self.widget_2.setObjectName(u"widget_2")
+        self.widget_2.setGeometry(QRect(20, 150, 261, 121))
+        self.widget_2.setStyleSheet(u"background-color: rgb(244, 244, 244);\n"
+"border-radius: 15px;\n"
+"")
+        self.widget_5 = QWidget(self.scrollAreaWidgetContents_2)
+        self.widget_5.setObjectName(u"widget_5")
+        self.widget_5.setGeometry(QRect(300, 150, 131, 121))
+        self.widget_5.setStyleSheet(u"background-color: rgb(244, 244, 244);\n"
+"border-radius: 15px;\n"
+"")
+        self.widget_6 = QWidget(self.scrollAreaWidgetContents_2)
+        self.widget_6.setObjectName(u"widget_6")
+        self.widget_6.setGeometry(QRect(450, 150, 151, 121))
+        self.widget_6.setStyleSheet(u"background-color: rgb(244, 244, 244);\n"
+"border-radius: 15px;\n"
+"")
         self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         MainWindow.setCentralWidget(self.centralwidget)
