@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:heart_sync/utils/main_cards.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -48,35 +49,18 @@ class _HomePageState extends State<HomePage> {
               ),
         
               // cards 
-              SizedBox(height:25),
-
               Container(
-                height:80,
+                height:130,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    Container(
-                      padding: EdgeInsets.all(20),
-                      color: Colors.blue[300],
-                      child: Row(
-                        children: [
-                          Text("Heart Rate"),
-                        ],
-                      ),
-                    ),
-
-                    Container(
-                      padding: EdgeInsets.all(20),
-                      color: Colors.blue[300],
-                      child: Row(
-                        children: [
-                          Text("Hello"),
-                        ],
-                      ),
-                    ),
+                     MainCard(),
+                     MainCard(),
+                     MainCard(),
                   ],
                 ),
-              )
+              ),
+
             //search bar //
         
         
