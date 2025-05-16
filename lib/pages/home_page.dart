@@ -50,13 +50,27 @@ class _HomePageState extends State<HomePage> {
         
               // cards 
               Container(
-                height:130,
+                height:150,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                     MainCard(),
-                     MainCard(),
-                     MainCard(),
+                     MainCard(
+                      cardName: 'Heart Rate',
+                      cardColor: Colors.pink[400]!,
+                     ),
+                     MainCard(
+                      cardName: 'Blood Sugar',
+                      cardColor: Colors.teal[400]!,
+                     ),
+                     MainCard(
+                      cardName: 'Blah Blah',
+                      cardColor: Colors.orange[400]!,
+                     ),
+
+                     MainCard(
+                      cardName: 'Blah Blah',
+                      cardColor: Colors.lightBlue[400]!,
+                     ),
                   ],
                 ),
               ),
