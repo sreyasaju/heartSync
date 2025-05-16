@@ -15,37 +15,40 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: SafeArea(
-        child: Column(
-          children: [
-            // app bar
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 35.0, vertical: 30.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Hello, Sreya",
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
+        child: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // app bar
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 35.0, vertical: 30.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Hello, Sreya",
+                          style: TextStyle(
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: Colors.pink[200],
-                      borderRadius: BorderRadius.circular(10),
+                      ],
                     ),
-                    child: Icon(Icons.person),
-                  ),
-                ],
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.pink[200],
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Icon(Icons.person),
+                    ),
+                  ],
+                ),
               ),
-            ),
 
             // Heading above cards
             Padding(
@@ -111,7 +114,7 @@ class _HomePageState extends State<HomePage> {
             
             Container(
               height: 200,
-              padding: const EdgeInsets.all(15),
+              padding: const EdgeInsets.all(24),
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
@@ -120,9 +123,10 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ],
-        ),
+        ),   
       ),
-      bottomNavigationBar: NavBar()
+      ),
+      bottomNavigationBar: const NavBar(),
     );
   }
 }

@@ -18,10 +18,10 @@ class _MainCardState extends State<MainCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 150,
-      padding: const EdgeInsets.only(left: 20.0),
+      height: 100,
+      padding: const EdgeInsets.only(left: 15.0),
       child: Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(30),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           color: widget.cardColor,
@@ -33,6 +33,8 @@ class _MainCardState extends State<MainCard> {
                 fontSize:20,
                 color: Colors.grey[100]!,
                 fontWeight: FontWeight.bold
+                
+                
               ),
             ),
             const SizedBox(
