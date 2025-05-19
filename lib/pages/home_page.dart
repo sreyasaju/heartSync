@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:heart_sync/utils/main_cards.dart';
 import 'package:heart_sync/components/nav_bar.dart';
+import 'package:heart_sync/components/side_menu.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
