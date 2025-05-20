@@ -14,7 +14,7 @@ class _SideMenuState extends State<SideMenu> {
       padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
       constraints: const BoxConstraints(maxWidth: 290),
       decoration: BoxDecoration(
-        color: Colors.pink[900]!.withOpacity(0.9),
+        color: Colors.pink[900]!.withValues(alpha: 0.9),
         borderRadius: BorderRadius.circular(30),
       ),
       child: Column(
@@ -24,7 +24,7 @@ class _SideMenuState extends State<SideMenu> {
             child: Row(
                 children: [
                   CircleAvatar(
-                    backgroundColor: Colors.white.withOpacity(0.3),
+                    backgroundColor: Colors.white.withValues(alpha: 0.3),
                     foregroundColor: Colors.white,
                     child: const Icon(Icons.person_rounded),
                   ),
@@ -38,13 +38,20 @@ class _SideMenuState extends State<SideMenu> {
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 17,
+                          fontWeight: FontWeight.w500
                         ),
                       ),
                     ],
                   ),
                 ],
               )
-          )
+          ),
+          Text(
+            "BROWSE",
+            style: TextStyle(
+              color: Colors.white.withValues(alpha: 0.7)
+            ),
+          ),
         ],
       ),
     );
