@@ -29,10 +29,10 @@ class _SideMenuState extends State<SideMenu> {
                     child: const Icon(Icons.person_rounded),
                   ),
                   const SizedBox(width: 12),
-                  Column(
+                  const Column(
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       Text(
                         "Sreya Saju",
                         style: TextStyle(

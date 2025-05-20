@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       extendBody: true,
       backgroundColor: Colors.grey[300],
-      drawer: SideMenu(),
+      drawer: const SideMenu(),
       body: SafeArea(
         child: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               // app bar
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 35.0, vertical: 30.0),
+                padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 30.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -42,12 +42,12 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                     Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         color: Colors.pink[200],
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child: Icon(Icons.person),
+                      child: const Icon(Icons.person),
                     ),
                   ],
                 ),
@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
 
             // Heading above cards
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 35.0),
+              padding: const EdgeInsets.symmetric(horizontal: 35.0),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -69,10 +69,10 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
 
             // cards
-            Container(
+            SizedBox(
               height: 170,
               child: ListView(
                 scrollDirection: Axis.horizontal,
@@ -98,10 +98,10 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            SizedBox(height: 40),
+            const SizedBox(height: 40),
             
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 35.0),
+              padding: const EdgeInsets.symmetric(horizontal: 35.0),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
