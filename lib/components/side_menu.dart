@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rive/rive.dart';
 
 class SideMenu extends StatefulWidget {
   const SideMenu({super.key});
@@ -18,6 +19,7 @@ class _SideMenuState extends State<SideMenu> {
         borderRadius: BorderRadius.circular(30),
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding: const EdgeInsets.all(30),
@@ -37,7 +39,7 @@ class _SideMenuState extends State<SideMenu> {
                         "Sreya Saju",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 17,
+                          fontSize: 18,
                           fontWeight: FontWeight.w500
                         ),
                       ),
@@ -46,12 +48,17 @@ class _SideMenuState extends State<SideMenu> {
                 ],
               )
           ),
-          Text(
+          Padding(
+            padding: const EdgeInsets.only(left: 24, right:24, top:30, bottom:5),
+            child: Text(
             "BROWSE",
             style: TextStyle(
-              color: Colors.white.withValues(alpha: 0.7)
+              color: Colors.white.withValues(alpha: 0.7),
+              fontSize: 16,
+              fontWeight: FontWeight.bold
             ),
-          ),
+          )
+        ),
         ],
       ),
     );
