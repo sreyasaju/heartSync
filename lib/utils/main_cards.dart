@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
 class MainCard extends StatefulWidget {
   final String cardName;
-  final Color cardColor;
+  final cardColor;
 
   const MainCard({
     required this.cardName,
