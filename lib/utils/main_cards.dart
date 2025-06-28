@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:ui';
 
 class MainCard extends StatefulWidget {
   final String cardName;
