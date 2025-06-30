@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:heart_sync/utils/main_cards.dart';
 import 'package:heart_sync/components/nav_bar.dart';
 import 'package:heart_sync/components/side_menu.dart';
+import 'dart:ui' as ui;
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -23,6 +25,19 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              Stack(
+                children: [
+                  ClipPath(
+                    clipper: CoralCurveClipper(),
+                    child: Image.asset(
+                      "assets/bg_coral.png",
+                      height: 250,
+                      width: double.infinity,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ],
+              ),
               // app bar
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 30.0),
@@ -132,4 +147,22 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: const NavBar(),
     );
   }
+}
+
+class CoralCurveClipper extends CustomClipper<Path> {
+  @override
+    Path getClip(ui.Size size) {
+    Path path = ui.Path();
+    path.lineTo(0, size.height - 60);
+    path.quadraticBezierTo(
+      size.width / 2, size.height,
+      size.width, size.height - 60,
+    );
+    path.lineTo(size.width, 0);
+    path.close();
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }
