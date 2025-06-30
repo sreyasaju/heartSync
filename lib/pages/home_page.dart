@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
                     clipper: CoralCurveClipper(),
                     child: Image.asset(
                       "assets/bg_coral.png",
-                      height: 250,
+                      height: 300,
                       width: double.infinity,
                       fit: BoxFit.cover,
                     ),
@@ -44,14 +44,16 @@ class _HomePageState extends State<HomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Column(
+                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           "Hello, Sreya",
                           style: TextStyle(
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold,
+                            fontSize: 35,
+                            fontFamily: "BalooChettan2",
+                            fontWeight: FontWeight.w800,
+                            color: Colors.blueGrey[800],
                           ),
                         ),
                       ],
@@ -153,10 +155,10 @@ class CoralCurveClipper extends CustomClipper<Path> {
   @override
     Path getClip(ui.Size size) {
     Path path = ui.Path();
-    path.lineTo(0, size.height - 60);
+    path.lineTo(0, size.height - 80);
     path.quadraticBezierTo(
       size.width / 2, size.height,
-      size.width, size.height - 60,
+      size.width, size.height - 80,
     );
     path.lineTo(size.width, 0);
     path.close();
