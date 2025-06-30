@@ -21,7 +21,7 @@ class _MainCardState extends State<MainCard> {
       height: 100,
       padding: const EdgeInsets.only(left: 15.0),
       child: Container(
-        padding: const EdgeInsets.all(30),
+        padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           color: widget.cardColor,
@@ -30,15 +30,14 @@ class _MainCardState extends State<MainCard> {
           children: [
             Text(widget.cardName,
               style: TextStyle(
-                fontSize:20,
+                fontSize:16,
                 color: Colors.grey[100]!,
                 fontWeight: FontWeight.bold
-                
                 
               ),
             ),
             const SizedBox(
-              width: 10,
+              width: 15,
               height: 80,
             ),
           ],
