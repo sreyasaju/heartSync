@@ -36,11 +36,23 @@ class _HomePageState extends State<HomePage> {
                       fit: BoxFit.cover,
                     ),
                   ),
+                  Positioned(
+                    top: 40,
+                    right: 30,
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.pink[200],
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: const Icon(Icons.person),
+                    ),
+                  ),
                 ],
               ),
               // app bar
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 30.0),
+                padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 4.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -58,21 +70,14 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ],
                     ),
-                    Container(
-                      padding: const EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                        color: Colors.pink[200],
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: const Icon(Icons.person),
-                    ),
+                    
                   ],
                 ),
               ),
 
             // Heading above cards
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 35.0),
+              padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 25.0),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -86,7 +91,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
 
             // cards
             SizedBox(
@@ -97,19 +102,22 @@ class _HomePageState extends State<HomePage> {
                   MainCard(
                     cardName: 'Heart Rate',
                     cardColor: Colors.pink[400]!,
-
+                    borderColor: Colors.pink[300]!,
                   ),
                   MainCard(
                     cardName: 'Blood Sugar',
                     cardColor: Colors.teal[500]!,
+                    borderColor: Colors.teal[300]!,
                   ),
                   MainCard(
                     cardName: 'Blah Blah',
                     cardColor: Colors.deepOrange[400]!,
+                    borderColor: Colors.deepOrange[300]!,
                   ),
                   MainCard(
                     cardName: 'Blah Blah',
                     cardColor: Colors.lightBlue[500]!,
+                    borderColor: Colors.lightBlue[300]!
                   ),
                 ],
               ),

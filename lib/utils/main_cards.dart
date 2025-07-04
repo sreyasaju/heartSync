@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 class MainCard extends StatefulWidget {
   final String cardName;
   final cardColor;
+  final borderColor;
 
   const MainCard({
     required this.cardName,
     required this.cardColor,
+    required this.borderColor,
     super.key,
   });
 
@@ -19,11 +21,12 @@ class _MainCardState extends State<MainCard> {
   Widget build(BuildContext context) {
     return Container(
       height: 100,
-      padding: const EdgeInsets.only(left: 15.0),
+      padding: const EdgeInsets.only(left: 30.0),
       child: Container(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(width:7, color: widget.borderColor),
           color: widget.cardColor,
         ),
         child: Row(
