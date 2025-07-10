@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
 
             // Heading above cards
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 25.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 25.0),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -164,7 +164,7 @@ class _HomePageState extends State<HomePage> {
 
 class CoralCurveClipper extends CustomClipper<Path> {
   @override
-    Path getClip(ui.Size size) {
+  Path getClip(ui.Size size) {
     Path path = ui.Path();
     path.lineTo(0, size.height - 80);
     path.quadraticBezierTo(
@@ -173,7 +173,7 @@ class CoralCurveClipper extends CustomClipper<Path> {
     );
     path.lineTo(size.width, 0);
     path.close();
-    return path;
+    return path; 
   }
 
   @override
