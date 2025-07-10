@@ -21,7 +21,7 @@ class _MainCardState extends State<MainCard> {
   Widget build(BuildContext context) {
     return Container(
       height: 100,
-      padding: const EdgeInsets.only(left: 30.0),
+      padding: const EdgeInsets.only(left: 20.0),
       child: Container(
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
@@ -33,9 +33,10 @@ class _MainCardState extends State<MainCard> {
           children: [
             Text(widget.cardName,
               style: TextStyle(
-                fontSize:16,
+                fontSize:20,
                 color: Colors.grey[100]!,
-                fontWeight: FontWeight.bold
+                fontWeight: FontWeight.bold,
+                fontFamily: "BalooChettan2",
                 
               ),
             ),

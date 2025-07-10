@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
 
             // cards
             SizedBox(
@@ -99,10 +99,13 @@ class _HomePageState extends State<HomePage> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                  MainCard(
-                    cardName: 'Heart Rate',
-                    cardColor: Colors.pink[400]!,
-                    borderColor: Colors.pink[300]!,
+                  Padding(
+                    padding: EdgeInsets.only(left:5.0),
+                    child: MainCard(
+                      cardName: 'Heart Rate',
+                      cardColor: Colors.pink[400]!,
+                      borderColor: Colors.pink[300]!,
+                    ),
                   ),
                   MainCard(
                     cardName: 'Blood Sugar',
@@ -110,12 +113,12 @@ class _HomePageState extends State<HomePage> {
                     borderColor: Colors.teal[300]!,
                   ),
                   MainCard(
-                    cardName: 'Blah Blah',
+                    cardName: 'Blood Pressure',
                     cardColor: Colors.deepOrange[400]!,
                     borderColor: Colors.deepOrange[300]!,
                   ),
                   MainCard(
-                    cardName: 'Blah Blah',
+                    cardName: 'SpO2',
                     cardColor: Colors.lightBlue[500]!,
                     borderColor: Colors.lightBlue[300]!
                   ),
