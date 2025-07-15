@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:heart_sync/pages/medication_logger.dart';
 
 class NavBar extends StatelessWidget {
   const NavBar({super.key});
@@ -35,7 +36,9 @@ class NavBar extends StatelessWidget {
               icon: const Icon(Icons.search),
               color: Colors.pink[50],
               iconSize: 36,
-              onPressed: () {},
+              onPressed: () { 
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MedicationLogger()));
+                },
             ),
           ],
         ),
