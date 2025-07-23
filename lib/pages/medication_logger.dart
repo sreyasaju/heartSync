@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:heart_sync/components/side_menu.dart';
+import 'package:heart_sync/components/nav_bar.dart';
+
 
 
 class MedicationLogger extends StatefulWidget {
@@ -19,6 +21,8 @@ class _MedicationLoggerState extends State<MedicationLogger> {
       extendBody: true,
       backgroundColor: Colors.grey[300],
       drawer: const SideMenu(),
+      bottomNavigationBar: const NavBar(),
     );
+    
   }
 }
