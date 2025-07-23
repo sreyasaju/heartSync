@@ -19,6 +19,13 @@ class NavBar extends StatelessWidget {
           children: [
             IconButton(
               hoverColor: Colors.pink,
+              icon: const Icon(Icons.home_rounded),
+              color: Colors.pink[50],
+              iconSize: 36,
+              onPressed: () {},
+            ),
+            IconButton(
+              hoverColor: Colors.pink,
               icon: const Icon(Icons.favorite_rounded),
               color: Colors.pink[50],
               iconSize: 36,
