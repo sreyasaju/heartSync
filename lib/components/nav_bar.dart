@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:heart_sync/pages/home_page.dart';
 import 'package:heart_sync/pages/medication_logger.dart';
 
 class NavBar extends StatelessWidget {
@@ -22,7 +23,9 @@ class NavBar extends StatelessWidget {
               icon: const Icon(Icons.home_rounded),
               color: Colors.pink[50],
               iconSize: 36,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+              },
             ),
             IconButton(
               hoverColor: Colors.pink,
