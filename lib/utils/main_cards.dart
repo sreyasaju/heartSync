@@ -21,9 +21,9 @@ class _MainCardState extends State<MainCard> {
   Widget build(BuildContext context) {
     return Container(
       height: 100,
-      padding: const EdgeInsets.only(left: 20.0),
+      padding: const EdgeInsets.only(left: 25.0),
       child: Container(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           border: Border.all(width:7, color: widget.borderColor),
