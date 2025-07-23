@@ -77,17 +77,19 @@ class _HomePageState extends State<HomePage> {
 
             // Heading above cards
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 25.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  "Todays' Vitals",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.pink[300],
-                    fontWeight: FontWeight.bold,
+              padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 15.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [ 
+                  Text(
+                    "Todays' Vitals",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.pink[300],
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
+                ],
               ),
             ),
 
@@ -129,17 +131,19 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(height: 40),
             
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 35.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  "Progress Timeline",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.pink[300],
-                    fontWeight: FontWeight.bold,
+              padding: const EdgeInsets.symmetric(horizontal: 30.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [ 
+                  Text(
+                    "Progress Timeline",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.pink[300],
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
+                ],
               ),
             ),
             
