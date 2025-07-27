@@ -17,23 +17,30 @@ class _MedicationLoggerState extends State<MedicationLogger> {
       backgroundColor: Colors.grey[300],
       drawer: const SideMenu(),
       bottomNavigationBar: const NavBar(),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.pink[900],
-        foregroundColor: Colors.pink[50],
-        onPressed: () {
-          // Respond to button press
-        },
-        child: const Icon(Icons.add),
-      ),
-      body: SafeArea(
-        child: SingleChildScrollView(
-          physics: const BouncingScrollPhysics(),
-          child: Column(
-            children: <Widget>[
-              // your other widgets here
-            ],
+      body: Stack(
+        children: [
+          SafeArea(
+            child: SingleChildScrollView(
+              physics: const BouncingScrollPhysics(),
+              child: Column(
+                children: <Widget>[
+                  // your other widgets here
+                ],
+              ),
+            ),
           ),
-        ),
+          Align(
+            alignment: Alignment.center,
+            child: FloatingActionButton(
+              backgroundColor: Colors.pink[900],
+              foregroundColor: Colors.pink[50],
+              onPressed: () {
+                // Respond to button press
+              },
+              child: const Icon(Icons.add),
+            ),
+          ),
+        ],
       ),
     );
   }
