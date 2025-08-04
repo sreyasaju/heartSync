@@ -2,20 +2,16 @@
 
 **heartSync** is a simple Flutter app designed to help with heart recovery. It aims to make vitals tracking feel a little more comforting and gentle. 💖
 
-The design is inspired by calm underwater worlds, soft curves, and a turtle companion that offers quiet encouragement. 🐢
-
 > Under Development!
 
 
-## ✨ What’s Built So Far
+## What’s Built So Far
 
 - A dashboard with cards for daily vitals (Heart Rate, Blood Sugar, etc.)
-- A coral-themed background with a curved ocean header.
 - Section for a progress timeline (streaks/check-ins... still in progress)
-- Clean component structure (for cards, navbar, side menu, etc.)
 
 
-## 🌱 Still In Progress
+## Still In Progress
 
 - Turtle animations (using Rive)
 - Actual data syncing with Apple Health or wearables.
@@ -25,7 +21,7 @@ The design is inspired by calm underwater worlds, soft curves, and a turtle comp
 
 ## Why This Exists
 
-heartSync was made to rmake recovery feel a little less mechanical — and a little more magical 🪄✨
+heartSync was made to make recovery feel a little less mechanical — and a little more magical 🪄✨
 It isn’t perfect, but it’s growing slowly, like coral 🪸
 
 ## Contributing
